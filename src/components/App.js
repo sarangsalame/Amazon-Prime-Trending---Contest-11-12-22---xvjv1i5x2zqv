@@ -34,7 +34,7 @@ const App = ({slides}) => {
   <div id='navigation'>
     {index === 0? <button type = 'button' disabled data-testid = 'button-prev' onClick = {handlePrev}>Previous</button>:<button type = 'button'  data-testid = 'button-prev' onClick = {handlePrev}>Previous</button>}
     {index === 0? <button type = 'button' disabled data-testid = 'button-restart' onClick = {handleRestart}>Restart</button>:<button type = 'button'  data-testid = 'button-restart' onClick = {handleRestart}>Restart</button>}
-    {index === 0? <button type = 'button' disabled data-testid = 'button-next' onClick = {handleNext}>Next</button>:<button type = 'button'  data-testid = 'button-next' onClick = {handleNext}>Next</button>}
+    {index === slides.length-1? <button type = 'button' disabled data-testid = 'button-next' onClick = {handleNext}>Next</button>:<button type = 'button'  data-testid = 'button-next' onClick = {handleNext}>Next</button>}
     </div>
      </div>
      </div>
