@@ -30,7 +30,7 @@ const App = ({slides}) => {
 
 <p data-testid = 'text'>
   {slides[index].text}
-  
+  </p>
   <div id='navigation'>
     {index === 0? <button type = 'button' disabled data-testid = 'button-prev' onClick = {handlePrev}>Previous</button>:<button type = 'button'  data-testid = 'button-prev' onClick = {handlePrev}>Previous</button>}
     {index === 0? <button type = 'button' disabled data-testid = 'button-restart' onClick = {handleRestart}>Restart</button>:<button type = 'button'  data-testid = 'button-restart' onClick = {handleRestart}>Restart</button>}
